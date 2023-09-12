@@ -1,0 +1,372 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Kanit', sans-serif;
+}
+
+/*----------navigation bar----------*/
+
+.threeD {
+    border: 2px solid green;
+    height: 100px;
+    z-index: 999;
+}
+
+
+/*top navbar container*/
+.navbar_container {
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to bottom, #fff 80%, #34908C 100%);
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	height: 80px;
+	z-index: 999;
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 0;
+	padding: 0 0;
+    /* border: 1px solid red; */
+}
+
+/* nav blue line */
+#navbarWhiteBar {
+  height: 0.3rem;
+  width: 100%;
+  background-color: #21505F;
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+}
+
+/* logo image */
+#logo_image img {
+    max-width: 10rem;
+    max-height: 10rem;
+    opacity: 100%;
+    margin: 16px;
+    margin-top: 18px;
+    margin-right: 400px;
+	
+}
+
+/*logo name*/
+#navbar_title {
+	margin-left: 0px;
+	background-color: #bfbdbd;
+	background-image: linear-gradient(to top, #6e6e6e 0%, #fff 100%);
+	background-size: 100%;
+	/* -webkit-background-clip: text; */
+	/* -moz-background-clip: text; */
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	display: flex;
+	align-items: center;
+	cursor: help;
+	text-decoration: none;
+	font-size: 3rem;
+	position: absolute;
+}
+
+
+/*name logo hover features*/
+#navbar_logo:hover {
+	background-image: linear-gradient(to top, #000 0%, #1a1a1a 100%);
+	transition: color 1s ease, background-image 1s ease;
+}
+
+.navbar_menu {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	text-align: center;
+}
+
+.navbar_item {
+	height: 80px;
+}
+
+.navbar_links {
+	color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	padding: 0 1rem;
+	height: 100%;
+}
+
+.navbar_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 30px;
+	padding: 0 0;
+	width: 100%;
+	text-decoration: none;
+    color: #000;
+}
+
+.button {
+    color: #000;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	/* margin: 0px; */
+    height: 100%;
+	width: 6rem;
+    outline: none;
+	border-radius: 40px;
+    text-decoration: none;
+    transition: all 1s ease; /* Add a smooth transition */
+    
+}
+
+.button:hover {
+    /* animation: colorCycle 2s linear infinite; */
+    background-color: #efefef;
+    color: #fff;
+}
+
+.navbar_links:hover {
+	color: #282A35;
+	transition: all 5s ease;
+}
+
+.body_container {
+	display: block;
+    position: relative;
+    z-index: 3;
+    max-height: 1080px;
+    max-width: 1920px;
+    color: #bfbdbd;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.name_container {
+	width: 100%;
+	height: 90dvh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: transparent url(subwayQuantum.png);
+	opacity: 1;
+	z-index: 10;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+    /* border: 5px solid green; */
+}
+
+.name_container h1 {
+	font-size: 10rem;
+	color: #ffbf00;
+	opacity: 1 !important;
+}
+.name_container h3 {
+	font-size: 3rem;
+	color: white;
+
+}
+
+#scrollButton {
+	position: absolute;
+	bottom: 0;
+	font-size: 2rem;
+    background-color: #521610;
+    height: 6vh;
+    width: 50vw;
+    border-width: 1px;
+    border-color: #fff;
+    border: solid;
+    /* top bottom, left right*/
+    border-radius: 20px 20px 0 0;
+}
+
+#scrollButton:hover {
+	color: #fff;
+	background-color: #ffbf00;
+	transition: all 1s ease;
+}
+
+#scrollButton:not(:hover) {
+    color: #fff;
+    transition: all 1s ease;
+}
+
+/*----------cards----------*/
+
+.card_container {
+	justify-content: center;
+	max-width: 1400px;
+	border: 3px;
+	padding: 0px 100px;
+	display: flex;
+	position: relative;
+	margin: 0 auto;
+}
+
+.card_container h5 {
+    bottom: 0;
+    color: #000;
+}
+
+#cardTitle1 {
+	padding-top: 5rem;
+}
+
+.cardTitle h1 {
+	font-size: 4rem;
+	color: #fff;
+	text-align: center;
+	z-index: 99;
+	position: relative;
+	animation: color-change2 2s infinite;
+}
+.cardTitle h2 {
+	font-size: 4rem;
+	color: #000;
+	text-align: center;
+	z-index: 99;
+	position: relative;
+}
+.cardTitle h3 {
+	font-size: 2rem;
+	color: #fff;
+	text-align: center;
+	z-index: 99;
+	position: relative;
+}
+
+.cardTitle2 h1 {
+	font-size: 8rem;
+	animation: color-change3 2s infinite;
+}
+
+.card {
+	border: 1px solid red;
+	padding: 15px;
+	border-radius: 20px 20px;
+  	height:500px;
+  	width:500px;
+    background-size: cover;
+    z-index: 99;
+    float: center;
+    margin: 30px auto;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.card:hover {
+	transform: translateY(-20px);
+}
+.card1 {
+	background-image: url(logos/QQCC-LOGOMEDIUM.png);
+}
+.card2 {
+	background-image: url(logos/QQCC-LOGOMEDIUM.png);
+}
+
+
+
+/*----------singleCards----------*/
+
+.singleCard_container {
+	max-width: 1400px;
+	border:5px;
+	justify-content: center;
+	padding: 0px 100px;
+	display: flex;
+	position: relative;
+	margin: 0 auto;
+}
+
+.singleCard {
+	border-radius: 20px 20px;
+  	height:738px;
+  	width:1100px;
+    background-size: cover;
+    z-index: 99;
+    float: center;
+    margin: 30px auto;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.singleCard:hover {
+	transform: translateY(-20px);
+}
+
+.singleCard1 {
+	background-image: url(subwayQuantum.png);
+    
+}
+.singleCard1:hover {
+	transform: scale(1.1);
+}
+
+/*----------text color change----------*/
+@keyframes color-change {
+	0% {color: red;}
+	50% {color: blue;}
+	100% {color: red;}
+}
+@keyframes color-change2 {
+	0% {color: #fff;}
+	50% {color: #3d3d3d;}
+	100% {color: #fff;}
+}
+@keyframes color-change3 {
+	0% {color: #fff;}
+	50% {color: #E0115F;}
+	100% {color: #fff;}
+}
+
+/*----------media query to make compatible with phone----------*/
+@media (max-width: 1200px) {
+	.card_container {
+		float: none;
+		justify-content: center;
+		display: flex;
+		/*display: grid;*/
+	}
+	.card {
+		height:350px; /*700px default*/
+  		width:350px;  /*700px default*/
+		float: none;
+	}
+	.card8, .card9 {
+		height:875px;
+  		width:700px;
+		float: none;
+	}
+	.singleCard {
+		height:584px;
+  		width:880px;
+	}
+	.cardTitle2 h1 {
+		font-size: 10rem;
+	}
+	.wrapper {
+		height: 3800px;
+	}
+	.flex_container {
+    	flex-direction: column;
+  	}
+  	.name_container {
+  		height: 50dvh;
+  	}
+	#scrollButton {
+		font-size: 4rem;
+		border-radius: 40px 40px 0 0;
+	}
+}
+
+
+
