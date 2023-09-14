@@ -344,6 +344,27 @@
 
 /*----------media query to make compatible with phone----------*/
 @media (max-width: 1200px) {
+	.navbar_container {
+		bottom: 0;
+		justify-content: center;
+		height: 200px;
+	}
+
+	#logo_image img {
+		max-width: 10rem;
+		max-height: 10rem;
+		opacity: 100%;
+		margin: 0 0;
+	}
+
+	.name_container h1{
+		font-size: 7rem;
+	}
+
+	.button {
+		font-size: 2rem;
+	}
+
 	.card_container {
 		float: none;
 		justify-content: center;
@@ -355,6 +376,11 @@
   		width:350px;  /*700px default*/
 		float: none;
 	}
+
+	.scrollButton {
+		height: 6rem;
+	}
+
 	.card8, .card9 {
 		height:875px;
   		width:700px;
