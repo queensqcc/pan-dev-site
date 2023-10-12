@@ -18,103 +18,81 @@
 		
 	</head>
 
-        <!-- background color and font color -->
-		<body style="background-color: #fff; color: #fff;">
-		
-            <!-- navbar -->
-            <nav class="navbar_container">
+    <!-- background color and font color -->
+    <body style="background-color: #0F8ED5; color: #fff;">
+    
+        <!-- navbar -->
+        <nav class="navbar_container">
+        
+            <!-- navbar logo -->
+            <div id="logo_image"><img src="logos/QQCC-LOGOLARGE.png"></div>
+            <!-- navbar title -->
+            <!-- <a href="index.html" id="navbar_title">Queen's Quantum Computing Club</a> -->
             
-                <!-- navbar logo -->
-                <div id="logo_image"><img src="logos/QQCC-LOGOLARGE.png"></div>
-                <!-- navbar title -->
-                <!-- <a href="index.html" id="navbar_title">Queen's Quantum Computing Club</a> -->
+            <ul class="navbar_menu">
+                <li class="navbar_btn">
+                    <a href="index.html" class="button">Home
+                    </a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="about.html" class="button">About
+                    </a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="https://linktr.ee/queensqcc" class="button">Links
+                    </a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="projects.html" class="button">Projects
+                    </a>
+                </li>
                 
-                <ul class="navbar_menu">
-                    <li class="navbar_btn">
-                        <a href="index.html" class="button">Home
-                        </a>
-                    </li>
-                    <li class="navbar_btn">
-                        <a href="about.html" class="button">About
-                        </a>
-                    </li>
-                    <li class="navbar_btn">
-                        <a href="https://linktr.ee/queensqcc" class="button">Links
-                        </a>
-                    </li>
-                    <li class="navbar_btn">
-                        <a href="projects.html" class="button">Projects
-                        </a>
-                    </li>
-                    
-                </ul>
-                <div id="navbarWhiteBar">
+            </ul>
+            <div id="navbarWhiteBar">
 
-                </div>
-            
-                
-            </nav>
-
-            <!-- <div class="threeD">
-                <script type="module" src="three.js"></script>
             </div>
-            -->
+        
+            
+        </nav>
 
+        <div class="name_container">
+            <h1>Queen's Quantum</h1>
+            <h1>Computing Club</h1>
+
+            <button class="scrollButton" onclick="document.querySelector('.cardTitle').scrollIntoView({ behavior: 'smooth', block: 'start'})">More About Quantum</button>
+            
+        </div>
         
 
-            <div class="name_container">
-                <h1>Queen's Quantum</h1>
-                <h1>Computing Club</h1>
+        <div class="cardTitle" id="cardTitle1">
+            <h1>Meet Our Team!</h1>
+        </div>
 
-                <button class="scrollButton" onclick="document.querySelector('.cardTitle').scrollIntoView({ behavior: 'smooth', block: 'start'})">More About Quantum</button>
-                
+        <div class="card_container">
+            
+            <div class="card card1">
+                <h5>President</h5>
+            </div>
+            <div class="card_writeup">
+                <h1>Daniell Pan</h1>
+                <h5>As the Vice President of the Queen's Quantum Computing Club, 
+                    my goal is to assist members on expanding their knowledge in the Quantum Computing field.
+                    This year I will take on the responsibility of leading a hands-on project, 
+                    involving implementing software with hardware.
+                </h5>
             </div>
             
+        </div>
 
-            <div class="cardTitle" id="cardTitle1">
-                <h1>Meet Our Team!</h1>
+        <div class="card_container card_container1">
+            
+            
+            <div class="card card2">
+                <h5>Vice President</h5>
             </div>
+        </div>
 
-            <div class="card_container">
-				
-				<div class="card card1">
-					<h5>President</h5>
-				</div>
-				<div class="card card2">
-					<h5>Vice President</h5>
-				</div>
-			</div>
-
-
-			<div class="betterCardContainer">
-				<h1></h1>
-				<h1>hi</h1>
-				<div class="betterCardContainer betterImageContainer">
-					<div class="betterCard"></div>
-					<div class="betterCard"></div>
-
-				</div>
-				<h1>more text hi</h1>
-				
-
-			</div>
-
-		
-			
-			
-			
-
-
-
-			
-
-			<div class="footer">
-				<h5>missing content? let me know. call your mother to complain.</h5>
-			</div>
-		
-
-
-		</body> 
+    </body> 
 	
 
 </html>

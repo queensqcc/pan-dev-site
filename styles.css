@@ -198,10 +198,6 @@
 	background-color: rgba(0,0,0, .8);
 }
 
-/* .scroll2 {
-	
-} */
-
 .scrollButton:hover {
 	color: #fff;
 	background-color: #ffbf00;
@@ -217,12 +213,17 @@
 
 .card_container {
 	justify-content: center;
-	max-width: 1400px;
-	border: 3px;
-	padding: 0px 100px;
+	max-width: 1600px;
+	border: solid yellow 2px;
+	padding: 0px 50px;
 	display: flex;
+	flex-direction: row;
 	position: relative;
 	margin: 0 auto;
+}
+
+.card_container1 {
+	background-color: #000;
 }
 
 .card_container h5 {
@@ -262,12 +263,13 @@
 	animation: color-change3 2s infinite;
 }
 
+/* blog cards */
 .card {
 	border: 1px solid red;
 	padding: 15px;
 	border-radius: 20px 20px;
-  	height:500px;
-  	width:500px;
+  	height:360px;
+  	width:360px;
     background-size: cover;
     z-index: 99;
     float: center;
@@ -281,10 +283,19 @@
 	transform: translateY(-20px);
 }
 .card1 {
-	background-image: url(logos/QQCC-LOGOMEDIUM.png);
+	background-image: url(images/dan.jpg);
 }
 .card2 {
 	background-image: url(logos/QQCC-LOGOMEDIUM.png);
+}
+
+.card_writeup {
+	width: 70%;
+	border: solid green 2px;
+}
+
+.card_writeup h5 {
+	font-size: 2rem;
 }
 
 
@@ -369,12 +380,22 @@
 		float: none;
 		justify-content: center;
 		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
 		/*display: grid;*/
 	}
 	.card {
-		height:350px; /*700px default*/
-  		width:350px;  /*700px default*/
+		height:700px; /*700px default*/
+  		width:700px;  /*700px default*/
 		float: none;
+	}
+
+	.card_writeup {
+		width: 100%;
+	}
+	.card_writeup h5{
+		font-size: 3rem;
 	}
 
 	.scrollButton {
